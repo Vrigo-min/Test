@@ -50,6 +50,7 @@
 .\objects\delay.o: ..\..\BSP\USART.h
 .\objects\delay.o: ..\..\BSP\TIM.h
 .\objects\delay.o: ..\..\BSP\CAN.h
+.\objects\delay.o: ..\..\Devices\Wolf_Online.h
 .\objects\delay.o: ..\..\Devices\DR16_Remote.h
 .\objects\delay.o: ..\..\Devices\M2006_Motor.h
 .\objects\delay.o: ..\..\Devices\Debug_ANO.h

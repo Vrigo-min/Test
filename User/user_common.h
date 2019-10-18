@@ -23,6 +23,7 @@
 #include "CAN.h"
 
 //Devices
+#include "Wolf_Online.h"
 #include "DR16_Remote.h"
 #include "M2006_Motor.h"
 #include "Debug_ANO.h"

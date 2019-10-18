@@ -51,6 +51,7 @@
 .\objects\can.o: ..\..\BSP\USART.h
 .\objects\can.o: ..\..\BSP\TIM.h
 .\objects\can.o: ..\..\BSP\CAN.h
+.\objects\can.o: ..\..\Devices\Wolf_Online.h
 .\objects\can.o: ..\..\Devices\DR16_Remote.h
 .\objects\can.o: ..\..\Devices\M2006_Motor.h
 .\objects\can.o: ..\..\Devices\Debug_ANO.h

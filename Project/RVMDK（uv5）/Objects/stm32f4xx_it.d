@@ -50,6 +50,7 @@
 .\objects\stm32f4xx_it.o: ..\..\BSP\USART.h
 .\objects\stm32f4xx_it.o: ..\..\BSP\TIM.h
 .\objects\stm32f4xx_it.o: ..\..\BSP\CAN.h
+.\objects\stm32f4xx_it.o: ..\..\Devices\Wolf_Online.h
 .\objects\stm32f4xx_it.o: ..\..\Devices\DR16_Remote.h
 .\objects\stm32f4xx_it.o: ..\..\Devices\M2006_Motor.h
 .\objects\stm32f4xx_it.o: ..\..\Devices\Debug_ANO.h

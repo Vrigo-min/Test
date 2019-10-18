@@ -6,6 +6,7 @@
 ".\objects\m2006_motor.o"
 ".\objects\dr16_remote.o"
 ".\objects\debug_ano.o"
+".\objects\wolf_online.o"
 ".\objects\delay.o"
 ".\objects\usart.o"
 ".\objects\nvic.o"
