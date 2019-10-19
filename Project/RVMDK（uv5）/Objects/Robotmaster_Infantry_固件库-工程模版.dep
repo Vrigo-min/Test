@@ -50,7 +50,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\User\main.c)(0x5DA8635E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\..\User\user_code.h)(0x5DA9C2FA)
@@ -104,9 +104,9 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
-F (..\..\User\stm32f4xx_it.c)(0x5DA463CA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
+F (..\..\User\stm32f4xx_it.c)(0x5DAADCB9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (..\..\User\stm32f4xx_it.h)(0x5D86E082)
 I (..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5D86E082)
 I (..\..\Libraries\CMSIS\Include\core_cm4.h)(0x5D86E082)
@@ -157,7 +157,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\User\user_common.h)(0x5DA9C0E5)()
 F (..\..\User\user_code.c)(0x5DA9C6F4)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\user_code.o --omf_browse .\objects\user_code.crf --depend .\objects\user_code.d)
@@ -212,11 +212,11 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\User\typedef.h)(0x5DA9C106)()
-F (..\..\Devices\M2006_Motor.c)(0x5DA46284)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\m2006_motor.o --omf_browse .\objects\m2006_motor.crf --depend .\objects\m2006_motor.d)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+F (..\..\Devices\M2006_Motor.c)(0x5DAADC7F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\m2006_motor.o --omf_browse .\objects\m2006_motor.crf --depend .\objects\m2006_motor.d)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\User\user_common.h)(0x5DA9C0E5)
 I (D:\KEIL\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (D:\KEIL\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -319,7 +319,7 @@ I (..\..\BSP\USART.h)(0x5D86E082)
 I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\Devices\Debug_ANO.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\debug_ano.o --omf_browse .\objects\debug_ano.crf --depend .\objects\debug_ano.d)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
@@ -373,7 +373,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 F (..\..\Devices\Wolf_Online.c)(0x5DA9C31B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\wolf_online.o --omf_browse .\objects\wolf_online.crf --depend .\objects\wolf_online.d)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\User\user_common.h)(0x5DA9C0E5)
@@ -425,7 +425,7 @@ I (..\..\BSP\USART.h)(0x5D86E082)
 I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\BSP\delay.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\..\BSP\delay.h)(0x5D86E082)
@@ -478,7 +478,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\BSP\USART.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (..\..\BSP\USART.h)(0x5D86E082)
@@ -531,7 +531,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\BSP\NVIC.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
 I (..\..\BSP\NVIC.h)(0x5D86E082)
@@ -584,7 +584,7 @@ I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\BSP\TIM.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
 I (..\..\BSP\TIM.h)(0x5D86E082)
@@ -637,7 +637,7 @@ I (..\..\BSP\USART.h)(0x5D86E082)
 I (..\..\BSP\CAN.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\BSP\CAN.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
 I (..\..\BSP\CAN.h)(0x5D86E082)
@@ -690,7 +690,7 @@ I (..\..\BSP\USART.h)(0x5D86E082)
 I (..\..\BSP\TIM.h)(0x5D86E082)
 I (..\..\Devices\Wolf_Online.h)(0x5D99A3F8)
 I (..\..\Devices\DR16_Remote.h)(0x5D9F3E9E)
-I (..\..\Devices\M2006_Motor.h)(0x5D9EFEAC)
+I (..\..\Devices\M2006_Motor.h)(0x5DAADC0C)
 I (..\..\Devices\Debug_ANO.h)(0x5D9F3545)
 F (..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c)(0x5D86E082)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\User -I ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\..\Libraries\CMSIS\Include -I ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\..\BSP -I ..\..\Module\Driver_Niming -I ..\..\Apps -I ..\..\Devices -I ..\..\Algorithm-I.\RTE\_______-________-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\KEIL\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F427xx -DUSE_STDPERIPH_DRIVER -DSTM32F427_437xx-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
 I (..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x5D86E082)

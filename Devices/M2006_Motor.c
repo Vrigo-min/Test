@@ -69,11 +69,11 @@ void M2006s_Init()
 {
 	for (int i = 0; i < 4; i++)
 	{
-		PositionPID_paraReset(&M2006s[i].Po_angle_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
-		PositionPID_paraReset(&M2006s[i].Po_speed_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
+		PositionPID_paraReset(&M2006s[i].pid_Angle, 0.0f, 0.0f, 0.0f, 8000, 1000);
+		PositionPID_paraReset(&M2006s[i].pid_Speed, 0.0f, 0.0f, 0.0f, 8000, 1000);
 		
-		IncrementalPID_paraReset(&M2006s[i].In_angle_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
-		IncrementalPID_paraReset(&M2006s[i].In_speed_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
+		IncrementalPID_paraReset(&M2006s[i].PID_Angle, 0.0f, 0.0f, 0.0f, 8000, 1000);
+		IncrementalPID_paraReset(&M2006s[i].PID_Speed, 0.0f, 0.0f, 0.0f, 8000, 1000);
 	}
 }
 
@@ -86,27 +86,20 @@ void M2006_DR16Control()
 	{
 		if (M2006s[i].M2006InfoUpdateFlag == 1)
 		{
-			M2006speed[i] = dr16_data.rc.ch2*5.0f;
-			M2006angle[i] = dr16_data.rc.ch3*5.0f;
+			M2006angle[i] = M2006speed[i] = dr16_data.rc.ch2*0.2f;
 
 			M2006s[i].targetSpeed = M2006speed[i];
-			M2006s[i].targetAngle = M2006angle[i];
+			M2006s[i].targetAngle += M2006angle[i];
 
-			M2006s[i].In_outCurrent = Incremental_PID(&M2006s[i].In_angle_pid, M2006s[i].targetAngle,M2006s[i].realAngle);
-			M2006s[i].In_PIDCurrent = Incremental_PID(&M2006s[i].In_speed_pid,M2006s[i].targetSpeed,M2006s[i].realSpeed);
-			
-			M2006s[i].Po_outCurrent = Position_PID(&M2006s[i].Po_angle_pid,M2006s[i].targetAngle,M2006s[i].realAngle);
-			M2006s[i].Po_PIDCurrent = Position_PID(&M2006s[i].Po_speed_pid,M2006s[i].Po_outCurrent,M2006s[i].realSpeed);
+			M2006s[i].outCurrent = Position_PID(&M2006s[i].pid_Angle, M2006s[i].targetAngle, M2006s[i].totalAngle);
+			M2006s[i].PIDCurrent = Position_PID(&M2006s[i].pid_Speed, M2006s[i].outCurrent, M2006s[i].realSpeed);
+			M2006s[i].IPIDCurrent = Incremental_PID(&M2006s[i].PID_Speed, M2006s[i].targetSpeed, M2006s[i].realSpeed);
 
 			M2006s[i].M2006InfoUpdateFlag = 0;
 		}
 	}
-	M2006_setCurrent(M2006s[0].In_outCurrent, M2006s[1].In_outCurrent, M2006s[2].In_outCurrent, M2006s[3].In_outCurrent);
-	/*M2006_setCurrent(M2006s[0].In_PIDCurrent, M2006s[1].In_PIDCurrent, M2006s[2].In_PIDCurrent, M2006s[3].In_PIDCurrent);
-	M2006_setCurrent(M2006s[0].Po_outCurrent, M2006s[1].Po_outCurrent, M2006s[2].Po_outCurrent, M2006s[3].Po_outCurrent);
-	M2006_setCurrent(M2006s[0].Po_PIDCurrent, M2006s[1].Po_PIDCurrent, M2006s[2].Po_PIDCurrent, M2006s[3].Po_PIDCurrent);
-*/
-
+	M2006_setCurrent(0, M2006s[1].PIDCurrent, 0, 0);
+	
 
 }
 

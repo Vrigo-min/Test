@@ -17,9 +17,7 @@ Section Cross References
     stm32f4xx_it.o(i.CAN2_RX0_IRQHandler) refers to m2006_motor.o(i.M2006_getInfo) for M2006_getInfo
     stm32f4xx_it.o(i.CAN2_RX0_IRQHandler) refers to stm32f4xx_can.o(i.CAN_ClearITPendingBit) for CAN_ClearITPendingBit
     stm32f4xx_it.o(i.TIM6_DAC_IRQHandler) refers to stm32f4xx_tim.o(i.TIM_GetITStatus) for TIM_GetITStatus
-    stm32f4xx_it.o(i.TIM6_DAC_IRQHandler) refers to pid.o(i.PositionPID_paraReset) for PositionPID_paraReset
     stm32f4xx_it.o(i.TIM6_DAC_IRQHandler) refers to stm32f4xx_tim.o(i.TIM_ClearITPendingBit) for TIM_ClearITPendingBit
-    stm32f4xx_it.o(i.TIM6_DAC_IRQHandler) refers to m2006_motor.o(.bss) for M2006s
     stm32f4xx_it.o(i.USART1_IRQHandler) refers to stm32f4xx_usart.o(i.USART_GetITStatus) for USART_GetITStatus
     stm32f4xx_it.o(i.USART1_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_Cmd) for DMA_Cmd
     stm32f4xx_it.o(i.USART1_IRQHandler) refers to stm32f4xx_dma.o(i.DMA_GetCurrDataCounter) for DMA_GetCurrDataCounter
@@ -42,8 +40,8 @@ Section Cross References
     user_code.o(i.Init) refers to tim.o(i.TIM6_CounterMode) for TIM6_CounterMode
     user_code.o(i.Test) refers to delay.o(i.delay_ms) for delay_ms
     user_code.o(i.Test) refers to wolf_online.o(.bss) for WolfOnline_Data
-    m2006_motor.o(i.M2006_DR16Control) refers to pid.o(i.Incremental_PID) for Incremental_PID
     m2006_motor.o(i.M2006_DR16Control) refers to pid.o(i.Position_PID) for Position_PID
+    m2006_motor.o(i.M2006_DR16Control) refers to pid.o(i.Incremental_PID) for Incremental_PID
     m2006_motor.o(i.M2006_DR16Control) refers to m2006_motor.o(i.M2006_setCurrent) for M2006_setCurrent
     m2006_motor.o(i.M2006_DR16Control) refers to m2006_motor.o(.bss) for M2006s
     m2006_motor.o(i.M2006_DR16Control) refers to dr16_remote.o(.bss) for dr16_data
@@ -1791,67 +1789,67 @@ Image Symbol Table
     i.Incremental_PID                        0x08000eb8   Section        0  pid.o(i.Incremental_PID)
     i.Init                                   0x08000f7c   Section        0  user_code.o(i.Init)
     i.M2006_DR16Control                      0x08000fa8   Section        0  m2006_motor.o(i.M2006_DR16Control)
-    i.M2006_getInfo                          0x080011fc   Section        0  m2006_motor.o(i.M2006_getInfo)
-    i.M2006_setCurrent                       0x080013ac   Section        0  m2006_motor.o(i.M2006_setCurrent)
-    i.M2006s_Init                            0x08001400   Section        0  m2006_motor.o(i.M2006s_Init)
-    i.MemManage_Handler                      0x080014b8   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x080014bc   Section        0  stm32f4xx_it.o(i.NMI_Handler)
-    i.NVIC_Config                            0x080014be   Section        0  nvic.o(i.NVIC_Config)
-    i.NVIC_Init                              0x080014e8   Section        0  misc.o(i.NVIC_Init)
-    i.PendSV_Handler                         0x08001560   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
-    i.PositionPID_paraReset                  0x08001564   Section        0  pid.o(i.PositionPID_paraReset)
-    i.Position_PID                           0x080015ac   Section        0  pid.o(i.Position_PID)
-    i.RCC_AHB1PeriphClockCmd                 0x08001670   Section        0  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
-    i.RCC_APB1PeriphClockCmd                 0x08001690   Section        0  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
-    i.RCC_APB2PeriphClockCmd                 0x080016b0   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
-    i.RCC_GetClocksFreq                      0x080016d0   Section        0  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
-    i.RemoteMode_Update                      0x080017b8   Section        0  dr16_remote.o(i.RemoteMode_Update)
-    i.SVC_Handler                            0x08001804   Section        0  stm32f4xx_it.o(i.SVC_Handler)
-    i.SetSysClock                            0x08001808   Section        0  system_stm32f4xx.o(i.SetSysClock)
-    SetSysClock                              0x08001809   Thumb Code   272  system_stm32f4xx.o(i.SetSysClock)
-    i.SysTick_Config                         0x08001928   Section        0  delay.o(i.SysTick_Config)
-    SysTick_Config                           0x08001929   Thumb Code    74  delay.o(i.SysTick_Config)
-    i.SysTick_Handler                        0x0800197c   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x08001980   Section        0  system_stm32f4xx.o(i.SystemInit)
-    i.TIM6_CounterMode                       0x080019e8   Section        0  tim.o(i.TIM6_CounterMode)
-    i.TIM6_DAC_IRQHandler                    0x08001a38   Section        0  stm32f4xx_it.o(i.TIM6_DAC_IRQHandler)
-    i.TIM_ARRPreloadConfig                   0x08001aac   Section        0  stm32f4xx_tim.o(i.TIM_ARRPreloadConfig)
-    i.TIM_ClearITPendingBit                  0x08001ac4   Section        0  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
-    i.TIM_Cmd                                0x08001aca   Section        0  stm32f4xx_tim.o(i.TIM_Cmd)
-    i.TIM_GetITStatus                        0x08001ae2   Section        0  stm32f4xx_tim.o(i.TIM_GetITStatus)
-    i.TIM_ITConfig                           0x08001b04   Section        0  stm32f4xx_tim.o(i.TIM_ITConfig)
-    i.TIM_TimeBaseInit                       0x08001b18   Section        0  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
-    i.Test                                   0x08001b9c   Section        0  user_code.o(i.Test)
-    i.USART1_IRQHandler                      0x08001bb4   Section        0  stm32f4xx_it.o(i.USART1_IRQHandler)
-    i.USART1_QuickInit                       0x08001c00   Section        0  usart.o(i.USART1_QuickInit)
-    i.USART1_RXDMA_Config                    0x08001ca4   Section        0  usart.o(i.USART1_RXDMA_Config)
-    i.USART2_IRQHandler                      0x08001d30   Section        0  stm32f4xx_it.o(i.USART2_IRQHandler)
-    i.USART2_QuickInit                       0x08001d64   Section        0  usart.o(i.USART2_QuickInit)
-    i.USART2_RXDMA_Config                    0x08001e14   Section        0  usart.o(i.USART2_RXDMA_Config)
-    i.USART6_QuickInit                       0x08001ea0   Section        0  usart.o(i.USART6_QuickInit)
-    i.USART6_RXDMA_Config                    0x08001f48   Section        0  usart.o(i.USART6_RXDMA_Config)
-    i.USART_Cmd                              0x08001fd4   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
-    i.USART_DMACmd                           0x08001fec   Section        0  stm32f4xx_usart.o(i.USART_DMACmd)
-    i.USART_GetITStatus                      0x08001ffe   Section        0  stm32f4xx_usart.o(i.USART_GetITStatus)
-    i.USART_ITConfig                         0x08002052   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x0800209c   Section        0  stm32f4xx_usart.o(i.USART_Init)
-    i.UsageFault_Handler                     0x08002170   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
-    i.WolfOnline_init                        0x08002174   Section        0  wolf_online.o(i.WolfOnline_init)
-    i.__scatterload_copy                     0x0800218c   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x0800219a   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x0800219c   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.abs_limit                              0x080021aa   Section        0  pid.o(i.abs_limit)
-    i.delay_ms                               0x080021d8   Section        0  delay.o(i.delay_ms)
-    i.main                                   0x08002220   Section        0  main.o(i.main)
+    i.M2006_getInfo                          0x08001190   Section        0  m2006_motor.o(i.M2006_getInfo)
+    i.M2006_setCurrent                       0x08001340   Section        0  m2006_motor.o(i.M2006_setCurrent)
+    i.M2006s_Init                            0x08001394   Section        0  m2006_motor.o(i.M2006s_Init)
+    i.MemManage_Handler                      0x0800144c   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x08001450   Section        0  stm32f4xx_it.o(i.NMI_Handler)
+    i.NVIC_Config                            0x08001452   Section        0  nvic.o(i.NVIC_Config)
+    i.NVIC_Init                              0x0800147c   Section        0  misc.o(i.NVIC_Init)
+    i.PendSV_Handler                         0x080014f4   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
+    i.PositionPID_paraReset                  0x080014f8   Section        0  pid.o(i.PositionPID_paraReset)
+    i.Position_PID                           0x08001540   Section        0  pid.o(i.Position_PID)
+    i.RCC_AHB1PeriphClockCmd                 0x08001604   Section        0  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
+    i.RCC_APB1PeriphClockCmd                 0x08001624   Section        0  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
+    i.RCC_APB2PeriphClockCmd                 0x08001644   Section        0  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.RCC_GetClocksFreq                      0x08001664   Section        0  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
+    i.RemoteMode_Update                      0x0800174c   Section        0  dr16_remote.o(i.RemoteMode_Update)
+    i.SVC_Handler                            0x08001798   Section        0  stm32f4xx_it.o(i.SVC_Handler)
+    i.SetSysClock                            0x0800179c   Section        0  system_stm32f4xx.o(i.SetSysClock)
+    SetSysClock                              0x0800179d   Thumb Code   272  system_stm32f4xx.o(i.SetSysClock)
+    i.SysTick_Config                         0x080018bc   Section        0  delay.o(i.SysTick_Config)
+    SysTick_Config                           0x080018bd   Thumb Code    74  delay.o(i.SysTick_Config)
+    i.SysTick_Handler                        0x08001910   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x08001914   Section        0  system_stm32f4xx.o(i.SystemInit)
+    i.TIM6_CounterMode                       0x0800197c   Section        0  tim.o(i.TIM6_CounterMode)
+    i.TIM6_DAC_IRQHandler                    0x080019cc   Section        0  stm32f4xx_it.o(i.TIM6_DAC_IRQHandler)
+    i.TIM_ARRPreloadConfig                   0x080019e8   Section        0  stm32f4xx_tim.o(i.TIM_ARRPreloadConfig)
+    i.TIM_ClearITPendingBit                  0x08001a00   Section        0  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
+    i.TIM_Cmd                                0x08001a06   Section        0  stm32f4xx_tim.o(i.TIM_Cmd)
+    i.TIM_GetITStatus                        0x08001a1e   Section        0  stm32f4xx_tim.o(i.TIM_GetITStatus)
+    i.TIM_ITConfig                           0x08001a40   Section        0  stm32f4xx_tim.o(i.TIM_ITConfig)
+    i.TIM_TimeBaseInit                       0x08001a54   Section        0  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
+    i.Test                                   0x08001ad8   Section        0  user_code.o(i.Test)
+    i.USART1_IRQHandler                      0x08001af0   Section        0  stm32f4xx_it.o(i.USART1_IRQHandler)
+    i.USART1_QuickInit                       0x08001b3c   Section        0  usart.o(i.USART1_QuickInit)
+    i.USART1_RXDMA_Config                    0x08001be0   Section        0  usart.o(i.USART1_RXDMA_Config)
+    i.USART2_IRQHandler                      0x08001c6c   Section        0  stm32f4xx_it.o(i.USART2_IRQHandler)
+    i.USART2_QuickInit                       0x08001ca0   Section        0  usart.o(i.USART2_QuickInit)
+    i.USART2_RXDMA_Config                    0x08001d50   Section        0  usart.o(i.USART2_RXDMA_Config)
+    i.USART6_QuickInit                       0x08001ddc   Section        0  usart.o(i.USART6_QuickInit)
+    i.USART6_RXDMA_Config                    0x08001e84   Section        0  usart.o(i.USART6_RXDMA_Config)
+    i.USART_Cmd                              0x08001f10   Section        0  stm32f4xx_usart.o(i.USART_Cmd)
+    i.USART_DMACmd                           0x08001f28   Section        0  stm32f4xx_usart.o(i.USART_DMACmd)
+    i.USART_GetITStatus                      0x08001f3a   Section        0  stm32f4xx_usart.o(i.USART_GetITStatus)
+    i.USART_ITConfig                         0x08001f8e   Section        0  stm32f4xx_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x08001fd8   Section        0  stm32f4xx_usart.o(i.USART_Init)
+    i.UsageFault_Handler                     0x080020ac   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
+    i.WolfOnline_init                        0x080020b0   Section        0  wolf_online.o(i.WolfOnline_init)
+    i.__scatterload_copy                     0x080020c8   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080020d6   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080020d8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.abs_limit                              0x080020e6   Section        0  pid.o(i.abs_limit)
+    i.delay_ms                               0x08002114   Section        0  delay.o(i.delay_ms)
+    i.main                                   0x0800215c   Section        0  main.o(i.main)
     .data                                    0x20000000   Section        4  pid.o(.data)
     .data                                    0x20000004   Section       16  stm32f4xx_rcc.o(.data)
     APBAHBPrescTable                         0x20000004   Data          16  stm32f4xx_rcc.o(.data)
     .data                                    0x20000014   Section       20  system_stm32f4xx.o(.data)
-    .bss                                     0x20000028   Section      880  m2006_motor.o(.bss)
-    .bss                                     0x20000398   Section      104  dr16_remote.o(.bss)
-    .bss                                     0x20000400   Section       67  debug_ano.o(.bss)
-    .bss                                     0x20000444   Section       72  wolf_online.o(.bss)
-    STACK                                    0x20000490   Section     1024  startup_stm32f427_437xx.o(STACK)
+    .bss                                     0x20000028   Section      864  m2006_motor.o(.bss)
+    .bss                                     0x20000388   Section      104  dr16_remote.o(.bss)
+    .bss                                     0x200003f0   Section       67  debug_ano.o(.bss)
+    .bss                                     0x20000434   Section       72  wolf_online.o(.bss)
+    STACK                                    0x20000480   Section     1024  startup_stm32f427_437xx.o(STACK)
 
     Global Symbols
 
@@ -2034,69 +2032,69 @@ Image Symbol Table
     IncrementalPID_paraReset                 0x08000e71   Thumb Code    66  pid.o(i.IncrementalPID_paraReset)
     Incremental_PID                          0x08000eb9   Thumb Code   196  pid.o(i.Incremental_PID)
     Init                                     0x08000f7d   Thumb Code    42  user_code.o(i.Init)
-    M2006_DR16Control                        0x08000fa9   Thumb Code   588  m2006_motor.o(i.M2006_DR16Control)
-    M2006_getInfo                            0x080011fd   Thumb Code   422  m2006_motor.o(i.M2006_getInfo)
-    M2006_setCurrent                         0x080013ad   Thumb Code    78  m2006_motor.o(i.M2006_setCurrent)
-    M2006s_Init                              0x08001401   Thumb Code   174  m2006_motor.o(i.M2006s_Init)
-    MemManage_Handler                        0x080014b9   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x080014bd   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
-    NVIC_Config                              0x080014bf   Thumb Code    40  nvic.o(i.NVIC_Config)
-    NVIC_Init                                0x080014e9   Thumb Code   106  misc.o(i.NVIC_Init)
-    PendSV_Handler                           0x08001561   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
-    PositionPID_paraReset                    0x08001565   Thumb Code    66  pid.o(i.PositionPID_paraReset)
-    Position_PID                             0x080015ad   Thumb Code   190  pid.o(i.Position_PID)
-    RCC_AHB1PeriphClockCmd                   0x08001671   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
-    RCC_APB1PeriphClockCmd                   0x08001691   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
-    RCC_APB2PeriphClockCmd                   0x080016b1   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
-    RCC_GetClocksFreq                        0x080016d1   Thumb Code   214  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
-    RemoteMode_Update                        0x080017b9   Thumb Code    72  dr16_remote.o(i.RemoteMode_Update)
-    SVC_Handler                              0x08001805   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x0800197d   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
-    SystemInit                               0x08001981   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
-    TIM6_CounterMode                         0x080019e9   Thumb Code    76  tim.o(i.TIM6_CounterMode)
-    TIM6_DAC_IRQHandler                      0x08001a39   Thumb Code   102  stm32f4xx_it.o(i.TIM6_DAC_IRQHandler)
-    TIM_ARRPreloadConfig                     0x08001aad   Thumb Code    24  stm32f4xx_tim.o(i.TIM_ARRPreloadConfig)
-    TIM_ClearITPendingBit                    0x08001ac5   Thumb Code     6  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
-    TIM_Cmd                                  0x08001acb   Thumb Code    24  stm32f4xx_tim.o(i.TIM_Cmd)
-    TIM_GetITStatus                          0x08001ae3   Thumb Code    34  stm32f4xx_tim.o(i.TIM_GetITStatus)
-    TIM_ITConfig                             0x08001b05   Thumb Code    18  stm32f4xx_tim.o(i.TIM_ITConfig)
-    TIM_TimeBaseInit                         0x08001b19   Thumb Code   104  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
-    Test                                     0x08001b9d   Thumb Code    18  user_code.o(i.Test)
-    USART1_IRQHandler                        0x08001bb5   Thumb Code    64  stm32f4xx_it.o(i.USART1_IRQHandler)
-    USART1_QuickInit                         0x08001c01   Thumb Code   156  usart.o(i.USART1_QuickInit)
-    USART1_RXDMA_Config                      0x08001ca5   Thumb Code   130  usart.o(i.USART1_RXDMA_Config)
-    USART2_IRQHandler                        0x08001d31   Thumb Code    42  stm32f4xx_it.o(i.USART2_IRQHandler)
-    USART2_QuickInit                         0x08001d65   Thumb Code   168  usart.o(i.USART2_QuickInit)
-    USART2_RXDMA_Config                      0x08001e15   Thumb Code   132  usart.o(i.USART2_RXDMA_Config)
-    USART6_QuickInit                         0x08001ea1   Thumb Code   158  usart.o(i.USART6_QuickInit)
-    USART6_RXDMA_Config                      0x08001f49   Thumb Code   130  usart.o(i.USART6_RXDMA_Config)
-    USART_Cmd                                0x08001fd5   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
-    USART_DMACmd                             0x08001fed   Thumb Code    18  stm32f4xx_usart.o(i.USART_DMACmd)
-    USART_GetITStatus                        0x08001fff   Thumb Code    84  stm32f4xx_usart.o(i.USART_GetITStatus)
-    USART_ITConfig                           0x08002053   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
-    USART_Init                               0x0800209d   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
-    UsageFault_Handler                       0x08002171   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
-    WolfOnline_init                          0x08002175   Thumb Code    20  wolf_online.o(i.WolfOnline_init)
-    __scatterload_copy                       0x0800218d   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x0800219b   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x0800219d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    abs_limit                                0x080021ab   Thumb Code    46  pid.o(i.abs_limit)
-    delay_ms                                 0x080021d9   Thumb Code    66  delay.o(i.delay_ms)
-    main                                     0x08002221   Thumb Code    12  main.o(i.main)
-    Region$$Table$$Base                      0x0800222c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800224c   Number         0  anon$$obj.o(Region$$Table)
+    M2006_DR16Control                        0x08000fa9   Thumb Code   474  m2006_motor.o(i.M2006_DR16Control)
+    M2006_getInfo                            0x08001191   Thumb Code   422  m2006_motor.o(i.M2006_getInfo)
+    M2006_setCurrent                         0x08001341   Thumb Code    78  m2006_motor.o(i.M2006_setCurrent)
+    M2006s_Init                              0x08001395   Thumb Code   174  m2006_motor.o(i.M2006s_Init)
+    MemManage_Handler                        0x0800144d   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x08001451   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
+    NVIC_Config                              0x08001453   Thumb Code    40  nvic.o(i.NVIC_Config)
+    NVIC_Init                                0x0800147d   Thumb Code   106  misc.o(i.NVIC_Init)
+    PendSV_Handler                           0x080014f5   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
+    PositionPID_paraReset                    0x080014f9   Thumb Code    66  pid.o(i.PositionPID_paraReset)
+    Position_PID                             0x08001541   Thumb Code   190  pid.o(i.Position_PID)
+    RCC_AHB1PeriphClockCmd                   0x08001605   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd)
+    RCC_APB1PeriphClockCmd                   0x08001625   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd)
+    RCC_APB2PeriphClockCmd                   0x08001645   Thumb Code    26  stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd)
+    RCC_GetClocksFreq                        0x08001665   Thumb Code   214  stm32f4xx_rcc.o(i.RCC_GetClocksFreq)
+    RemoteMode_Update                        0x0800174d   Thumb Code    72  dr16_remote.o(i.RemoteMode_Update)
+    SVC_Handler                              0x08001799   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x08001911   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
+    SystemInit                               0x08001915   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
+    TIM6_CounterMode                         0x0800197d   Thumb Code    76  tim.o(i.TIM6_CounterMode)
+    TIM6_DAC_IRQHandler                      0x080019cd   Thumb Code    22  stm32f4xx_it.o(i.TIM6_DAC_IRQHandler)
+    TIM_ARRPreloadConfig                     0x080019e9   Thumb Code    24  stm32f4xx_tim.o(i.TIM_ARRPreloadConfig)
+    TIM_ClearITPendingBit                    0x08001a01   Thumb Code     6  stm32f4xx_tim.o(i.TIM_ClearITPendingBit)
+    TIM_Cmd                                  0x08001a07   Thumb Code    24  stm32f4xx_tim.o(i.TIM_Cmd)
+    TIM_GetITStatus                          0x08001a1f   Thumb Code    34  stm32f4xx_tim.o(i.TIM_GetITStatus)
+    TIM_ITConfig                             0x08001a41   Thumb Code    18  stm32f4xx_tim.o(i.TIM_ITConfig)
+    TIM_TimeBaseInit                         0x08001a55   Thumb Code   104  stm32f4xx_tim.o(i.TIM_TimeBaseInit)
+    Test                                     0x08001ad9   Thumb Code    18  user_code.o(i.Test)
+    USART1_IRQHandler                        0x08001af1   Thumb Code    64  stm32f4xx_it.o(i.USART1_IRQHandler)
+    USART1_QuickInit                         0x08001b3d   Thumb Code   156  usart.o(i.USART1_QuickInit)
+    USART1_RXDMA_Config                      0x08001be1   Thumb Code   130  usart.o(i.USART1_RXDMA_Config)
+    USART2_IRQHandler                        0x08001c6d   Thumb Code    42  stm32f4xx_it.o(i.USART2_IRQHandler)
+    USART2_QuickInit                         0x08001ca1   Thumb Code   168  usart.o(i.USART2_QuickInit)
+    USART2_RXDMA_Config                      0x08001d51   Thumb Code   132  usart.o(i.USART2_RXDMA_Config)
+    USART6_QuickInit                         0x08001ddd   Thumb Code   158  usart.o(i.USART6_QuickInit)
+    USART6_RXDMA_Config                      0x08001e85   Thumb Code   130  usart.o(i.USART6_RXDMA_Config)
+    USART_Cmd                                0x08001f11   Thumb Code    24  stm32f4xx_usart.o(i.USART_Cmd)
+    USART_DMACmd                             0x08001f29   Thumb Code    18  stm32f4xx_usart.o(i.USART_DMACmd)
+    USART_GetITStatus                        0x08001f3b   Thumb Code    84  stm32f4xx_usart.o(i.USART_GetITStatus)
+    USART_ITConfig                           0x08001f8f   Thumb Code    74  stm32f4xx_usart.o(i.USART_ITConfig)
+    USART_Init                               0x08001fd9   Thumb Code   204  stm32f4xx_usart.o(i.USART_Init)
+    UsageFault_Handler                       0x080020ad   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
+    WolfOnline_init                          0x080020b1   Thumb Code    20  wolf_online.o(i.WolfOnline_init)
+    __scatterload_copy                       0x080020c9   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080020d7   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080020d9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    abs_limit                                0x080020e7   Thumb Code    46  pid.o(i.abs_limit)
+    delay_ms                                 0x08002115   Thumb Code    66  delay.o(i.delay_ms)
+    main                                     0x0800215d   Thumb Code    12  main.o(i.main)
+    Region$$Table$$Base                      0x08002168   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002188   Number         0  anon$$obj.o(Region$$Table)
     Test_I                                   0x20000000   Data           4  pid.o(.data)
     SystemCoreClock                          0x20000014   Data           4  system_stm32f4xx.o(.data)
     AHBPrescTable                            0x20000018   Data          16  system_stm32f4xx.o(.data)
-    M2006s                                   0x20000028   Data         880  m2006_motor.o(.bss)
-    DR16_rxBuff                              0x20000398   Data          20  dr16_remote.o(.bss)
-    dr16_data                                0x200003ac   Data          26  dr16_remote.o(.bss)
-    DR16_Export_data                         0x200003c8   Data          56  dr16_remote.o(.bss)
-    send_buf                                 0x20000400   Data          15  debug_ano.o(.bss)
-    ANO_rxBuff                               0x2000040f   Data          52  debug_ano.o(.bss)
-    WolfOnline_rxBuff                        0x20000444   Data          52  wolf_online.o(.bss)
-    WolfOnline_Data                          0x20000478   Data          20  wolf_online.o(.bss)
-    __initial_sp                             0x20000890   Data           0  startup_stm32f427_437xx.o(STACK)
+    M2006s                                   0x20000028   Data         864  m2006_motor.o(.bss)
+    DR16_rxBuff                              0x20000388   Data          20  dr16_remote.o(.bss)
+    dr16_data                                0x2000039c   Data          26  dr16_remote.o(.bss)
+    DR16_Export_data                         0x200003b8   Data          56  dr16_remote.o(.bss)
+    send_buf                                 0x200003f0   Data          15  debug_ano.o(.bss)
+    ANO_rxBuff                               0x200003ff   Data          52  debug_ano.o(.bss)
+    WolfOnline_rxBuff                        0x20000434   Data          52  wolf_online.o(.bss)
+    WolfOnline_Data                          0x20000468   Data          20  wolf_online.o(.bss)
+    __initial_sp                             0x20000880   Data           0  startup_stm32f427_437xx.o(STACK)
 
 
 
@@ -2106,9 +2104,9 @@ Memory Map of the image
 
   Image Entry point : 0x080001c1
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00002274, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x000021b0, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000224c, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002188, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2156,85 +2154,85 @@ Memory Map of the image
     0x08000eb8   0x08000eb8   0x000000c4   Code   RO            6    i.Incremental_PID   pid.o
     0x08000f7c   0x08000f7c   0x0000002a   Code   RO          365    i.Init              user_code.o
     0x08000fa6   0x08000fa6   0x00000002   PAD
-    0x08000fa8   0x08000fa8   0x00000254   Code   RO          400    i.M2006_DR16Control  m2006_motor.o
-    0x080011fc   0x080011fc   0x000001b0   Code   RO          401    i.M2006_getInfo     m2006_motor.o
-    0x080013ac   0x080013ac   0x00000054   Code   RO          402    i.M2006_setCurrent  m2006_motor.o
-    0x08001400   0x08001400   0x000000b8   Code   RO          403    i.M2006s_Init       m2006_motor.o
-    0x080014b8   0x080014b8   0x00000004   Code   RO          267    i.MemManage_Handler  stm32f4xx_it.o
-    0x080014bc   0x080014bc   0x00000002   Code   RO          268    i.NMI_Handler       stm32f4xx_it.o
-    0x080014be   0x080014be   0x00000028   Code   RO          698    i.NVIC_Config       nvic.o
-    0x080014e6   0x080014e6   0x00000002   PAD
-    0x080014e8   0x080014e8   0x00000078   Code   RO          805    i.NVIC_Init         misc.o
-    0x08001560   0x08001560   0x00000002   Code   RO          269    i.PendSV_Handler    stm32f4xx_it.o
-    0x08001562   0x08001562   0x00000002   PAD
-    0x08001564   0x08001564   0x00000048   Code   RO            7    i.PositionPID_paraReset  pid.o
-    0x080015ac   0x080015ac   0x000000c4   Code   RO            9    i.Position_PID      pid.o
-    0x08001670   0x08001670   0x00000020   Code   RO         3147    i.RCC_AHB1PeriphClockCmd  stm32f4xx_rcc.o
-    0x08001690   0x08001690   0x00000020   Code   RO         3156    i.RCC_APB1PeriphClockCmd  stm32f4xx_rcc.o
-    0x080016b0   0x080016b0   0x00000020   Code   RO         3159    i.RCC_APB2PeriphClockCmd  stm32f4xx_rcc.o
-    0x080016d0   0x080016d0   0x000000e8   Code   RO         3168    i.RCC_GetClocksFreq  stm32f4xx_rcc.o
-    0x080017b8   0x080017b8   0x0000004c   Code   RO          450    i.RemoteMode_Update  dr16_remote.o
-    0x08001804   0x08001804   0x00000002   Code   RO          270    i.SVC_Handler       stm32f4xx_it.o
-    0x08001806   0x08001806   0x00000002   PAD
-    0x08001808   0x08001808   0x00000120   Code   RO         5354    i.SetSysClock       system_stm32f4xx.o
-    0x08001928   0x08001928   0x00000054   Code   RO          562    i.SysTick_Config    delay.o
-    0x0800197c   0x0800197c   0x00000002   Code   RO          271    i.SysTick_Handler   stm32f4xx_it.o
-    0x0800197e   0x0800197e   0x00000002   PAD
-    0x08001980   0x08001980   0x00000068   Code   RO         5356    i.SystemInit        system_stm32f4xx.o
-    0x080019e8   0x080019e8   0x00000050   Code   RO          725    i.TIM6_CounterMode  tim.o
-    0x08001a38   0x08001a38   0x00000074   Code   RO          272    i.TIM6_DAC_IRQHandler  stm32f4xx_it.o
-    0x08001aac   0x08001aac   0x00000018   Code   RO         4534    i.TIM_ARRPreloadConfig  stm32f4xx_tim.o
-    0x08001ac4   0x08001ac4   0x00000006   Code   RO         4541    i.TIM_ClearITPendingBit  stm32f4xx_tim.o
-    0x08001aca   0x08001aca   0x00000018   Code   RO         4546    i.TIM_Cmd           stm32f4xx_tim.o
-    0x08001ae2   0x08001ae2   0x00000022   Code   RO         4567    i.TIM_GetITStatus   stm32f4xx_tim.o
-    0x08001b04   0x08001b04   0x00000012   Code   RO         4571    i.TIM_ITConfig      stm32f4xx_tim.o
-    0x08001b16   0x08001b16   0x00000002   PAD
-    0x08001b18   0x08001b18   0x00000084   Code   RO         4618    i.TIM_TimeBaseInit  stm32f4xx_tim.o
-    0x08001b9c   0x08001b9c   0x00000018   Code   RO          366    i.Test              user_code.o
-    0x08001bb4   0x08001bb4   0x0000004c   Code   RO          273    i.USART1_IRQHandler  stm32f4xx_it.o
-    0x08001c00   0x08001c00   0x000000a4   Code   RO          601    i.USART1_QuickInit  usart.o
-    0x08001ca4   0x08001ca4   0x0000008c   Code   RO          602    i.USART1_RXDMA_Config  usart.o
-    0x08001d30   0x08001d30   0x00000034   Code   RO          274    i.USART2_IRQHandler  stm32f4xx_it.o
-    0x08001d64   0x08001d64   0x000000b0   Code   RO          603    i.USART2_QuickInit  usart.o
-    0x08001e14   0x08001e14   0x0000008c   Code   RO          604    i.USART2_RXDMA_Config  usart.o
-    0x08001ea0   0x08001ea0   0x000000a8   Code   RO          607    i.USART6_QuickInit  usart.o
-    0x08001f48   0x08001f48   0x0000008c   Code   RO          608    i.USART6_RXDMA_Config  usart.o
-    0x08001fd4   0x08001fd4   0x00000018   Code   RO         5100    i.USART_Cmd         stm32f4xx_usart.o
-    0x08001fec   0x08001fec   0x00000012   Code   RO         5101    i.USART_DMACmd      stm32f4xx_usart.o
-    0x08001ffe   0x08001ffe   0x00000054   Code   RO         5104    i.USART_GetITStatus  stm32f4xx_usart.o
-    0x08002052   0x08002052   0x0000004a   Code   RO         5106    i.USART_ITConfig    stm32f4xx_usart.o
-    0x0800209c   0x0800209c   0x000000d4   Code   RO         5107    i.USART_Init        stm32f4xx_usart.o
-    0x08002170   0x08002170   0x00000004   Code   RO          275    i.UsageFault_Handler  stm32f4xx_it.o
-    0x08002174   0x08002174   0x00000018   Code   RO          527    i.WolfOnline_init   wolf_online.o
-    0x0800218c   0x0800218c   0x0000000e   Code   RO         5796    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x0800219a   0x0800219a   0x00000002   Code   RO         5797    i.__scatterload_null  mc_w.l(handlers.o)
-    0x0800219c   0x0800219c   0x0000000e   Code   RO         5798    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080021aa   0x080021aa   0x0000002e   Code   RO           10    i.abs_limit         pid.o
-    0x080021d8   0x080021d8   0x00000048   Code   RO          563    i.delay_ms          delay.o
-    0x08002220   0x08002220   0x0000000c   Code   RO          235    i.main              main.o
-    0x0800222c   0x0800222c   0x00000020   Data   RO         5794    Region$$Table       anon$$obj.o
+    0x08000fa8   0x08000fa8   0x000001e8   Code   RO          400    i.M2006_DR16Control  m2006_motor.o
+    0x08001190   0x08001190   0x000001b0   Code   RO          401    i.M2006_getInfo     m2006_motor.o
+    0x08001340   0x08001340   0x00000054   Code   RO          402    i.M2006_setCurrent  m2006_motor.o
+    0x08001394   0x08001394   0x000000b8   Code   RO          403    i.M2006s_Init       m2006_motor.o
+    0x0800144c   0x0800144c   0x00000004   Code   RO          267    i.MemManage_Handler  stm32f4xx_it.o
+    0x08001450   0x08001450   0x00000002   Code   RO          268    i.NMI_Handler       stm32f4xx_it.o
+    0x08001452   0x08001452   0x00000028   Code   RO          698    i.NVIC_Config       nvic.o
+    0x0800147a   0x0800147a   0x00000002   PAD
+    0x0800147c   0x0800147c   0x00000078   Code   RO          805    i.NVIC_Init         misc.o
+    0x080014f4   0x080014f4   0x00000002   Code   RO          269    i.PendSV_Handler    stm32f4xx_it.o
+    0x080014f6   0x080014f6   0x00000002   PAD
+    0x080014f8   0x080014f8   0x00000048   Code   RO            7    i.PositionPID_paraReset  pid.o
+    0x08001540   0x08001540   0x000000c4   Code   RO            9    i.Position_PID      pid.o
+    0x08001604   0x08001604   0x00000020   Code   RO         3147    i.RCC_AHB1PeriphClockCmd  stm32f4xx_rcc.o
+    0x08001624   0x08001624   0x00000020   Code   RO         3156    i.RCC_APB1PeriphClockCmd  stm32f4xx_rcc.o
+    0x08001644   0x08001644   0x00000020   Code   RO         3159    i.RCC_APB2PeriphClockCmd  stm32f4xx_rcc.o
+    0x08001664   0x08001664   0x000000e8   Code   RO         3168    i.RCC_GetClocksFreq  stm32f4xx_rcc.o
+    0x0800174c   0x0800174c   0x0000004c   Code   RO          450    i.RemoteMode_Update  dr16_remote.o
+    0x08001798   0x08001798   0x00000002   Code   RO          270    i.SVC_Handler       stm32f4xx_it.o
+    0x0800179a   0x0800179a   0x00000002   PAD
+    0x0800179c   0x0800179c   0x00000120   Code   RO         5354    i.SetSysClock       system_stm32f4xx.o
+    0x080018bc   0x080018bc   0x00000054   Code   RO          562    i.SysTick_Config    delay.o
+    0x08001910   0x08001910   0x00000002   Code   RO          271    i.SysTick_Handler   stm32f4xx_it.o
+    0x08001912   0x08001912   0x00000002   PAD
+    0x08001914   0x08001914   0x00000068   Code   RO         5356    i.SystemInit        system_stm32f4xx.o
+    0x0800197c   0x0800197c   0x00000050   Code   RO          725    i.TIM6_CounterMode  tim.o
+    0x080019cc   0x080019cc   0x0000001c   Code   RO          272    i.TIM6_DAC_IRQHandler  stm32f4xx_it.o
+    0x080019e8   0x080019e8   0x00000018   Code   RO         4534    i.TIM_ARRPreloadConfig  stm32f4xx_tim.o
+    0x08001a00   0x08001a00   0x00000006   Code   RO         4541    i.TIM_ClearITPendingBit  stm32f4xx_tim.o
+    0x08001a06   0x08001a06   0x00000018   Code   RO         4546    i.TIM_Cmd           stm32f4xx_tim.o
+    0x08001a1e   0x08001a1e   0x00000022   Code   RO         4567    i.TIM_GetITStatus   stm32f4xx_tim.o
+    0x08001a40   0x08001a40   0x00000012   Code   RO         4571    i.TIM_ITConfig      stm32f4xx_tim.o
+    0x08001a52   0x08001a52   0x00000002   PAD
+    0x08001a54   0x08001a54   0x00000084   Code   RO         4618    i.TIM_TimeBaseInit  stm32f4xx_tim.o
+    0x08001ad8   0x08001ad8   0x00000018   Code   RO          366    i.Test              user_code.o
+    0x08001af0   0x08001af0   0x0000004c   Code   RO          273    i.USART1_IRQHandler  stm32f4xx_it.o
+    0x08001b3c   0x08001b3c   0x000000a4   Code   RO          601    i.USART1_QuickInit  usart.o
+    0x08001be0   0x08001be0   0x0000008c   Code   RO          602    i.USART1_RXDMA_Config  usart.o
+    0x08001c6c   0x08001c6c   0x00000034   Code   RO          274    i.USART2_IRQHandler  stm32f4xx_it.o
+    0x08001ca0   0x08001ca0   0x000000b0   Code   RO          603    i.USART2_QuickInit  usart.o
+    0x08001d50   0x08001d50   0x0000008c   Code   RO          604    i.USART2_RXDMA_Config  usart.o
+    0x08001ddc   0x08001ddc   0x000000a8   Code   RO          607    i.USART6_QuickInit  usart.o
+    0x08001e84   0x08001e84   0x0000008c   Code   RO          608    i.USART6_RXDMA_Config  usart.o
+    0x08001f10   0x08001f10   0x00000018   Code   RO         5100    i.USART_Cmd         stm32f4xx_usart.o
+    0x08001f28   0x08001f28   0x00000012   Code   RO         5101    i.USART_DMACmd      stm32f4xx_usart.o
+    0x08001f3a   0x08001f3a   0x00000054   Code   RO         5104    i.USART_GetITStatus  stm32f4xx_usart.o
+    0x08001f8e   0x08001f8e   0x0000004a   Code   RO         5106    i.USART_ITConfig    stm32f4xx_usart.o
+    0x08001fd8   0x08001fd8   0x000000d4   Code   RO         5107    i.USART_Init        stm32f4xx_usart.o
+    0x080020ac   0x080020ac   0x00000004   Code   RO          275    i.UsageFault_Handler  stm32f4xx_it.o
+    0x080020b0   0x080020b0   0x00000018   Code   RO          527    i.WolfOnline_init   wolf_online.o
+    0x080020c8   0x080020c8   0x0000000e   Code   RO         5796    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080020d6   0x080020d6   0x00000002   Code   RO         5797    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080020d8   0x080020d8   0x0000000e   Code   RO         5798    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080020e6   0x080020e6   0x0000002e   Code   RO           10    i.abs_limit         pid.o
+    0x08002114   0x08002114   0x00000048   Code   RO          563    i.delay_ms          delay.o
+    0x0800215c   0x0800215c   0x0000000c   Code   RO          235    i.main              main.o
+    0x08002168   0x08002168   0x00000020   Data   RO         5794    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x0800224c, Size: 0x00000028, Max: 0xffffffff, ABSOLUTE)
-
-    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
-
-    0x20000000   0x0800224c   0x00000004   Data   RW           11    .data               pid.o
-    0x20000004   0x08002250   0x00000010   Data   RW         3200    .data               stm32f4xx_rcc.o
-    0x20000014   0x08002260   0x00000014   Data   RW         5357    .data               system_stm32f4xx.o
-
-
-    Execution Region ER_ZI (Exec base: 0x20000028, Load base: 0x08002274, Size: 0x00000868, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08002188, Size: 0x00000028, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000028        -       0x00000370   Zero   RW          404    .bss                m2006_motor.o
-    0x20000398        -       0x00000068   Zero   RW          452    .bss                dr16_remote.o
-    0x20000400        -       0x00000043   Zero   RW          497    .bss                debug_ano.o
-    0x20000443   0x08002274   0x00000001   PAD
-    0x20000444        -       0x00000048   Zero   RW          528    .bss                wolf_online.o
-    0x2000048c   0x08002274   0x00000004   PAD
-    0x20000490        -       0x00000400   Zero   RW         5392    STACK               startup_stm32f427_437xx.o
+    0x20000000   0x08002188   0x00000004   Data   RW           11    .data               pid.o
+    0x20000004   0x0800218c   0x00000010   Data   RW         3200    .data               stm32f4xx_rcc.o
+    0x20000014   0x0800219c   0x00000014   Data   RW         5357    .data               system_stm32f4xx.o
+
+
+    Execution Region ER_ZI (Exec base: 0x20000028, Load base: 0x080021b0, Size: 0x00000858, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000028        -       0x00000360   Zero   RW          404    .bss                m2006_motor.o
+    0x20000388        -       0x00000068   Zero   RW          452    .bss                dr16_remote.o
+    0x200003f0        -       0x00000043   Zero   RW          497    .bss                debug_ano.o
+    0x20000433   0x080021b0   0x00000001   PAD
+    0x20000434        -       0x00000048   Zero   RW          528    .bss                wolf_online.o
+    0x2000047c   0x080021b0   0x00000004   PAD
+    0x20000480        -       0x00000400   Zero   RW         5392    STACK               startup_stm32f427_437xx.o
 
 
 ==============================================================================
@@ -2248,7 +2246,7 @@ Image component sizes
          0          0          0          0         67        578   debug_ano.o
        156         16          0          0          0      27422   delay.o
        524         22          0          0        104       4250   dr16_remote.o
-      1296         34          0          0        880       4186   m2006_motor.o
+      1188         40          0          0        864       4106   m2006_motor.o
         12          0          0          0          0        479   main.o
        120         14          0          0          0       1176   misc.o
         40          0          0          0          0        686   nvic.o
@@ -2257,7 +2255,7 @@ Image component sizes
       1566         16          0          0          0       7082   stm32f4xx_can.o
        486         26          0          0          0       5343   stm32f4xx_dma.o
        214          0          0          0          0       2007   stm32f4xx_gpio.o
-       370         48          0          0          0       7104   stm32f4xx_it.o
+       282         40          0          0          0       7068   stm32f4xx_it.o
        328         36          0         16          0       5067   stm32f4xx_rcc.o
        238         28          0          0          0       4761   stm32f4xx_tim.o
        412          8          0          0          0       4753   stm32f4xx_usart.o
@@ -2268,7 +2266,7 @@ Image component sizes
         24          4          0          0         72       1678   wolf_online.o
 
     ----------------------------------------------------------------------
-      8234        386        460         40       2152     412605   Object Totals
+      8038        384        460         40       2136     412489   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         16          0          0          0          5          0   (incl. Padding)
 
@@ -2307,15 +2305,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      8320        402        460         40       2152     405977   Grand Totals
-      8320        402        460         40       2152     405977   ELF Image Totals
-      8320        402        460         40          0          0   ROM Totals
+      8124        400        460         40       2136     405861   Grand Totals
+      8124        400        460         40       2136     405861   ELF Image Totals
+      8124        400        460         40          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 8780 (   8.57kB)
-    Total RW  Size (RW Data + ZI Data)              2192 (   2.14kB)
-    Total ROM Size (Code + RO Data + RW Data)       8820 (   8.61kB)
+    Total RO  Size (Code + RO Data)                 8584 (   8.38kB)
+    Total RW  Size (RW Data + ZI Data)              2176 (   2.13kB)
+    Total ROM Size (Code + RO Data + RW Data)       8624 (   8.42kB)
 
 ==============================================================================
 

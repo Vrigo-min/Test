@@ -232,16 +232,7 @@ void TIM6_DAC_IRQHandler(void)
 	int i;
 	if (TIM_GetITStatus(TIM6, TIM_IT_Update) != RESET)
 	{
-		if(UsePid)
-		{
-			IncrementalPID_paraReset(&M2006s[i].In_angle_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
-			IncrementalPID_paraReset(&M2006s[i].In_angle_pid,3.0f,0.0f,0.0f,8000,1000);
-		}
-		if(UsePID)
-		{
-			PositionPID_paraReset(&M2006s[i].Po_angle_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
-			PositionPID_paraReset(&M2006s[i].Po_speed_pid, 0.0f, 0.0f, 0.0f, 8000, 1000);
-		}
+	
 		TIM_ClearITPendingBit(TIM6, TIM_IT_Update);
 	}
 }

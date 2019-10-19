@@ -21,23 +21,20 @@ typedef struct {
 	int16_t realTorque;			//读回来的实际转矩
 	int16_t targetSpeed;			//目标速度
 	int32_t targetAngle;			//目标角度
-
 	uint16_t lastAngle;			//上次的角度
 	int32_t  totalAngle;			//累积总共角度
 	int16_t  turnCount;			//转过的圈数
+	uint8_t  temperture;        //读回来的电机温度
 
 	int16_t outCurrent;				//输出电流
-	int16_t inneroutCurrent;				//输出电流
-	
-	int16_t  In_outCurrent;
-	int16_t  In_PIDCurrent;
-	int16_t  Po_outCurrent;
-	int16_t  Po_PIDCurrent;
+	int16_t  PIDCurrent;          //双环输出的电流
+	int16_t  IPIDCurrent;         //增量式输出电流
 
-	positionpid_t Po_angle_pid;
-	positionpid_t Po_speed_pid;		//角度电机pid
-	incrementalpid_t In_speed_pid;
-	incrementalpid_t In_angle_pid;
+	incrementalpid_t PID_Speed;
+	incrementalpid_t PID_Angle;
+
+	positionpid_t pid_Speed;
+	positionpid_t pid_Angle;
 
 	uint8_t  M2006InfoUpdateFlag;		//信息读取更新标志
 	uint16_t M2006InfoUpdateFrame;	//帧率
